@@ -1,0 +1,47 @@
+
+<div id="page-wrapper">
+<div class="container border-bottom-0"style="margin-left: 150px">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+            <h3 style="margin-bottom: 25px; text-align: center;">Visualiza Médico</h3>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="medico.primeiroNome"id="name" name="name" placeholder="Primeiro Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name2"  ng-model="medico.segundoNome"name="name2" placeholder="Segundo Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name2"  ng-model="medico.especialidade.descricao"name="name2" placeholder="Especialidade" required>
+            </div>
+            </div>   
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="medico.email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                   
+                    <input type="text" class="form-control" id="name2"  ng-model="medico.isAtivo"name="name2"  required>
+                </div>
+
+                <input type="text" class="form-control" id="name2"  ng-model="medico.isOcupado"name="name2"  required>
+         
+            <div class="form-group">
+            <div class="col-xl-9 selectContainer form-group">
+                  <input type="text" class="form-control" id="name2"  ng-model="medico.endereco.uf"name="name2"  required>
+                </div>
+            </div>
+            <div class="form-group">
+            <div class="col-xl-9 selectContainer form-group">
+                  <input type="text" class="form-control" id="name2"  ng-model="medico.endereco.cidade"name="name2"  required>
+                </div>
+            </div>
+        <button type="button" id="cancela" ng-click="volta()" name="submit" class="btn btn-default pull-right">Voltar</button>
+        
+        </form>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,57 @@
+
+   
+         <div id="page-wrapper" style="padding-top: 20px">
+             
+           <div class="col-lg-10">
+               
+                    <div class="panel panel-default">
+                        
+                        <div class="panel-heading">
+                           Medicos
+                           <a ng-href="#/medicos/cadastra"><button type="button" id="submit" name="submit" class="btn btn-primary pull-right"style="padding-top: 1px;">Novo</button></a>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Primeiro Nome</th>
+                                            <th>Segundo Nome</th>
+                                            <th>Email</th>
+                                            <th>Ativo</th>
+                                            <th>Ocupado</th>
+                                            <th>Ação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="var in medicos">
+                                            <td><a ng-href="#/medicos/cadastra/{{var.id}}">{{var.primeiroNome}}</a></td>
+                                            <td>{{var.segundoNome}}</td>
+                                            <td>{{var.email}}</td>
+                                            <td><input type="checkbox" ng-model="var.isAtivo" ng-checked="var.isAtivo" ng-disabled="true"></td>
+                                            <th><input type="radio"   ng-checked="var.isOcupado" ng-disabled="true"></th>
+                                            <td><a ng-href="#/medicos/visualiza/{{var.id}}">Visualizar</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+        </div>
+    
+    
+   
+
+
+
+
+
+
+
+
+

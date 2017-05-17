@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="app/resources/css/sb-admin-2.css">
+
+    
+
+    <!-- Bootstrap Core CSS -->
+    <link href="app/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="app/resources/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="app/resources/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="app/resources/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="app/resources/css/sb-admin-2.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="app/resources/css/custom.css">
+    
+    <link href="app/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<body ng-app="maisvida">
+
+
+            <aside data-ng-include=" 'app/views/nav/nav-bar.html' " data-ng-cloak=""  id="nav-container" ng-hide="logou()"></aside>
+
+            <div class="view-container">
+                <section data-ng-view="" id="content"></section>
+            </div>
+
+             <aside data-ng-include=" 'app/views/nav/footer.html' " data-ng-cloak=""  id="nav-container" ng-hide="logou()"></aside>
+
+<script src="app/scripts/app.js"></script>
+<script src="app/scripts/controller/loginController.js"></script>
+<script src="app/scripts/service/loginService.js"></script>
+
+<script src="app/scripts/controller/cadastraMedicoController.js"></script>
+<script src="app/scripts/service/combosService.js"></script>
+<script src="app/scripts/service/medicoService.js"></script>
+<script src="app/scripts/controller/visualizaMedicoController.js"></script>
+<script src="app/scripts/controller/listaMedicosController.js"></script>
+
+
+
+
+
+ <!-- jQuery -->
+    <script src="app/resources/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="app/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="app/resources/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="app/resources/vendor/raphael/raphael.min.js"></script>
+    <script src="app/resources/vendor/morrisjs/morris.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="app/resources/dist/js/sb-admin-2.js"></script>
+
+
+</body>
+</html>

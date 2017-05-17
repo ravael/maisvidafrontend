@@ -1,0 +1,64 @@
+
+<div id="page-wrapper">
+<div class="container border-bottom-0"style="margin-left: 150px">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+            <h3 style="margin-bottom: 25px; text-align: center;">Cadastra Médicos</h3>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="medico.primeiroNome"id="name" name="name" placeholder="Primeiro Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name2"  ng-model="medico.segundoNome"name="name2" placeholder="Ultimo Nome" required>
+            </div>
+            <div class="form-group">
+            
+                <div class="col-xl-9 selectContainer form-group">
+                    <select class="form-control" name="size" ng-model="medico.especialidade.descricao">
+                        <option ng-repeat="var in especialidades">{{var.descricao}}</option>
+                    </select>
+                </div>
+            </div>   
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="medico.email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label><input type="checkbox" ng-model="medico.isAtivo" value="true" ng-checked="medico.isAtivo">Ativo</label>
+                </div>
+
+                <label class="rate-hit">
+                    <input type="radio" ng-model="medico.isOcupado" ng-value="true" ng-checked="medico.isOcupado">
+                    Ocupado
+                </label>
+                
+                <label class="rate-miss">
+                    <input type="radio" ng-model="medico.isOcupado" ng-value="false" ng-checked="!medico.isOcupado">
+                    disponivel
+                </label>
+         
+            <div class="form-group">
+            <div class="col-xl-9 selectContainer form-group">
+                    <select class="form-control" name="size" ng-model="medico.endereco.uf">
+                    <option ng-repeat="var in ufs" value="{{var.descricao}}">{{var.descricao}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+            <div class="col-xl-9 selectContainer form-group">
+                    <select class="form-control" name="size" ng-model="medico.endereco.cidade">
+                    <option ng-repeat="var in cidades">{{var.descricao}}</option>
+                        
+                    </select>
+                </div>
+            </div>
+        <button type="button" id="cancela" ng-click="cancela()" name="submit" class="btn btn-default pull-right">Cancelar</button>
+        <button type="button" id="submit" ng-click="cadastra(medico)" name="submit" class="btn btn-primary pull-right">Salvar Médico</button>
+        
+        </form>
+    </div>
+</div>
+</div>
+</div>
